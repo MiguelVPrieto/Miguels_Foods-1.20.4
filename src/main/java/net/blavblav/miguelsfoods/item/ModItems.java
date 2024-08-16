@@ -14,6 +14,12 @@ public class ModItems {
     public static final RegistryObject<Item> COCONUT = ITEMS.register("coconut",
             () -> new Item(new Item.Properties().food(ModFoods.COCONUT)));
 
+    public static final RegistryObject<Item> OPENED_COCONUT = ITEMS.register("opened_coconut",
+            () -> new Item(new Item.Properties().food(ModFoods.OPENED_COCONUT)));
+
+    public static final RegistryObject<Item> COCONUT_WATER = ITEMS.register("coconut_water",
+            () -> new Item(new Item.Properties().food(ModFoods.COCONUT_WATER)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

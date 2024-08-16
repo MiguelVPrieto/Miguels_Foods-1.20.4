@@ -47,6 +47,8 @@ public class MiguelsFoods
     {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.COCONUT);
+            event.accept(ModItems.OPENED_COCONUT);
+            event.accept(ModItems.COCONUT_WATER);
         }
     }
 
