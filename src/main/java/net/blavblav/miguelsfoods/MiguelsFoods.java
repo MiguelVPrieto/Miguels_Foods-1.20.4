@@ -52,6 +52,9 @@ public class MiguelsFoods
             event.accept(ModItems.RICE);
             event.accept(ModItems.ONION);
             event.accept(ModItems.GRAPE);
+            event.accept(ModItems.BEAN);
+            event.accept(ModItems.LETTUCE);
+            event.accept(ModItems.CABBAGE);
         }
     }
 

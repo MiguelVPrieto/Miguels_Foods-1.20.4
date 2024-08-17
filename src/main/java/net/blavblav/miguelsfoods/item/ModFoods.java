@@ -40,4 +40,22 @@ public class ModFoods {
             .saturationMod(0.8f)
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100), 1.0f)
             .build();
+
+    public static final FoodProperties BEAN = new FoodProperties.Builder()
+            .nutrition(6)
+            .saturationMod(1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100), 1.0f)
+            .build();
+
+    public static final FoodProperties LETTUCE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationMod(0.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 400), 1.0f)
+            .build();
+
+    public static final FoodProperties CABBAGE = new FoodProperties.Builder()
+            .nutrition(4)
+            .saturationMod(0.7f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 50), 1.0f)
+            .build();
 }
