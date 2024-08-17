@@ -58,4 +58,32 @@ public class ModFoods {
             .saturationMod(0.7f)
             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 50), 1.0f)
             .build();
+
+    public static final FoodProperties BEER = new FoodProperties.Builder()
+            .nutrition(6)
+            .saturationMod(1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 200), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 1200), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 600), 1.0f)
+            .build();
+
+    public static final FoodProperties TACO = new FoodProperties.Builder()
+            .nutrition(8)
+            .saturationMod(1.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 50), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200), 1.0f)
+            .build();
+
+    public static final FoodProperties TOMATO = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationMod(0.6f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 50), 1.0f)
+            .build();
+
+    public static final FoodProperties BUTTER = new FoodProperties.Builder()
+            .nutrition(4)
+            .saturationMod(1.2f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 200), 1.0f)
+            .build();
 }

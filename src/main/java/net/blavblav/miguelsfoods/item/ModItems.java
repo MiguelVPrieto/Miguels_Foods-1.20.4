@@ -38,6 +38,18 @@ public class ModItems {
     public static final RegistryObject<Item> CABBAGE = ITEMS.register("cabbage",
             () -> new Item(new Item.Properties().food(ModFoods.CABBAGE)));
 
+    public static final RegistryObject<Item> BEER = ITEMS.register("beer",
+            () -> new Item(new Item.Properties().food(ModFoods.BEER)));
+
+    public static final RegistryObject<Item> TACO = ITEMS.register("taco",
+            () -> new Item(new Item.Properties().food(ModFoods.TACO)));
+
+    public static final RegistryObject<Item> TOMATO = ITEMS.register("tomato",
+            () -> new Item(new Item.Properties().food(ModFoods.TOMATO)));
+
+    public static final RegistryObject<Item> BUTTER = ITEMS.register("butter",
+            () -> new Item(new Item.Properties().food(ModFoods.BUTTER)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
