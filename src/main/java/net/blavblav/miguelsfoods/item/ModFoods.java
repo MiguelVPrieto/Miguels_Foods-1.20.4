@@ -23,4 +23,21 @@ public class ModFoods {
             .saturationMod(0.6f)
             .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 100), 1.0f)
             .build();
+
+    public static final FoodProperties RICE = new FoodProperties.Builder()
+            .nutrition(5)
+            .saturationMod(0.9f)
+            .build();
+
+    public static final FoodProperties ONION = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationMod(0.6f)
+            .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 100), 1.0f)
+            .build();
+
+    public static final FoodProperties GRAPE = new FoodProperties.Builder()
+            .nutrition(4)
+            .saturationMod(0.8f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100), 1.0f)
+            .build();
 }

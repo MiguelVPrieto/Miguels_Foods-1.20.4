@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "miguelsfoodsforge1204:item/food_pile_rice"
+  }
+}

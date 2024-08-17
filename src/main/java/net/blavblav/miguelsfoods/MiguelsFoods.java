@@ -49,6 +49,9 @@ public class MiguelsFoods
             event.accept(ModItems.COCONUT);
             event.accept(ModItems.OPENED_COCONUT);
             event.accept(ModItems.COCONUT_WATER);
+            event.accept(ModItems.RICE);
+            event.accept(ModItems.ONION);
+            event.accept(ModItems.GRAPE);
         }
     }
 
