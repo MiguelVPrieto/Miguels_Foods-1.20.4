@@ -112,4 +112,10 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.JUMP, 200), 1.0f)
             .effect(() -> new MobEffectInstance(MobEffects.LUCK, 1200), 1.0f)
             .build();
+
+    public static final FoodProperties CHEESE = new FoodProperties.Builder()
+            .nutrition(7)
+            .saturationMod(1.3f)
+            .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 200), 1.0f)
+            .build();
 }
