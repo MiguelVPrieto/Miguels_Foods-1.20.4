@@ -50,6 +50,18 @@ public class ModItems {
     public static final RegistryObject<Item> BUTTER = ITEMS.register("butter",
             () -> new Item(new Item.Properties().food(ModFoods.BUTTER)));
 
+    public static final RegistryObject<Item> TOMATO_SAUCE = ITEMS.register("tomato_sauce",
+            () -> new Item(new Item.Properties().food(ModFoods.TOMATO_SAUCE)));
+
+    public static final RegistryObject<Item> PIZZA = ITEMS.register("pizza",
+            () -> new Item(new Item.Properties().food(ModFoods.PIZZA)));
+
+    public static final RegistryObject<Item> COXINHA = ITEMS.register("coxinha",
+            () -> new Item(new Item.Properties().food(ModFoods.COXINHA)));
+
+    public static final RegistryObject<Item> BRIGADEIRO = ITEMS.register("brigadeiro",
+            () -> new Item(new Item.Properties().food(ModFoods.BRIGADEIRO)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

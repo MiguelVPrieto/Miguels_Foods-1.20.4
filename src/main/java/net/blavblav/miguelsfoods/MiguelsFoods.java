@@ -59,6 +59,10 @@ public class MiguelsFoods
             event.accept(ModItems.TACO);
             event.accept(ModItems.TOMATO);
             event.accept(ModItems.BUTTER);
+            event.accept(ModItems.TOMATO_SAUCE);
+            event.accept(ModItems.PIZZA);
+            event.accept(ModItems.COXINHA);
+            event.accept(ModItems.BRIGADEIRO);
         }
     }
 

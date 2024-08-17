@@ -86,4 +86,30 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100), 1.0f)
             .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 200), 1.0f)
             .build();
+
+    public static final FoodProperties TOMATO_SAUCE = new FoodProperties.Builder()
+            .nutrition(2)
+            .saturationMod(0.5f)
+            .build();
+
+    public static final FoodProperties PIZZA = new FoodProperties.Builder()
+            .nutrition(12)
+            .saturationMod(2.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100), 1.0f)
+            .build();
+
+    public static final FoodProperties COXINHA = new FoodProperties.Builder()
+            .nutrition(10)
+            .saturationMod(2.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100), 1.0f)
+            .build();
+
+    public static final FoodProperties BRIGADEIRO = new FoodProperties.Builder()
+            .nutrition(6)
+            .saturationMod(1.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.JUMP, 200), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.LUCK, 1200), 1.0f)
+            .build();
 }
