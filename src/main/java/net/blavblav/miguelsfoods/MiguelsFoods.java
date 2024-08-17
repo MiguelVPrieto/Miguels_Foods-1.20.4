@@ -1,6 +1,7 @@
 package net.blavblav.miguelsfoods;
 
 import com.mojang.logging.LogUtils;
+import net.blavblav.miguelsfoods.block.ModBlocks;
 import net.blavblav.miguelsfoods.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -27,6 +28,7 @@ public class MiguelsFoods
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
@@ -66,6 +68,8 @@ public class MiguelsFoods
             event.accept(ModItems.CHEESE);
             event.accept(ModItems.CHOCOLATE);
             event.accept(ModItems.DOUGH);
+
+            event.accept(ModItems.TOMATO_SEEDS);
         }
     }
 
