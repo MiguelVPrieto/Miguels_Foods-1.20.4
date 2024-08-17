@@ -118,4 +118,12 @@ public class ModFoods {
             .saturationMod(1.3f)
             .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 200), 1.0f)
             .build();
+
+    public static final FoodProperties CHOCOLATE = new FoodProperties.Builder()
+            .nutrition(6)
+            .saturationMod(1.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.LUCK, 300), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100), 1.0f)
+            .build();
 }

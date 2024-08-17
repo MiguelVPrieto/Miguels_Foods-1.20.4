@@ -64,6 +64,7 @@ public class MiguelsFoods
             event.accept(ModItems.COXINHA);
             event.accept(ModItems.BRIGADEIRO);
             event.accept(ModItems.CHEESE);
+            event.accept(ModItems.CHOCOLATE);
         }
     }
 
