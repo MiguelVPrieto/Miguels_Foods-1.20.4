@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "miguelsfoodsforge1204:block/rice_0"
+    },
+    "age=1": {
+      "model": "miguelsfoodsforge1204:block/rice_1"
+    },
+    "age=2": {
+      "model": "miguelsfoodsforge1204:block/rice_2"
+    },
+    "age=3": {
+      "model": "miguelsfoodsforge1204:block/rice_3"
+    },
+    "age=4": {
+      "model": "miguelsfoodsforge1204:block/rice_4"
+    },
+    "age=5": {
+      "model": "miguelsfoodsforge1204:block/rice_5"
+    },
+    "age=6": {
+      "model": "miguelsfoodsforge1204:block/rice_6"
+    },
+    "age=7": {
+      "model": "miguelsfoodsforge1204:block/rice_7"
+    }
+  }
+}

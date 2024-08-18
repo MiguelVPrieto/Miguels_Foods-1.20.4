@@ -44,6 +44,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.TOMATO);
         simpleItem(ModItems.TOMATO_SEEDS);
+        simpleItem(ModItems.RICE);
     }
 
     // Shoutout to El_Redstoniano for making this

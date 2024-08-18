@@ -1,13 +1,12 @@
 package net.blavblav.miguelsfoods.block;
 
 import net.blavblav.miguelsfoods.MiguelsFoods;
-import net.blavblav.miguelsfoods.block.custom.TomatoCropBlock;
+import net.blavblav.miguelsfoods.block.custom.RiceCropBlock;
 import net.blavblav.miguelsfoods.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -21,7 +20,11 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, MiguelsFoods.MOD_ID);
 
     public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("tomato_crop",
-            () -> new TomatoCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT).noOcclusion().noCollission()));
+            () -> new RiceCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT).noOcclusion().noCollission()));
+
+    public static final RegistryObject<Block> RICE_CROP = BLOCKS.register("rice_crop",
+            () -> new RiceCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

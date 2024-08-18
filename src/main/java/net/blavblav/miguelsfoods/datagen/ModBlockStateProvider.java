@@ -2,6 +2,7 @@ package net.blavblav.miguelsfoods.datagen;
 
 import net.blavblav.miguelsfoods.MiguelsFoods;
 import net.blavblav.miguelsfoods.block.ModBlocks;
+import net.blavblav.miguelsfoods.block.custom.RiceCropBlock;
 import net.blavblav.miguelsfoods.block.custom.TomatoCropBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -22,6 +23,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         makeTomatoCrop((CropBlock) ModBlocks.TOMATO_CROP.get(), "tomato_stage", "tomato_stage");
+        makeRiceCrop((CropBlock) ModBlocks.RICE_CROP.get(), "rice_stage", "rice_stage");
     }
 
 
@@ -35,6 +37,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((TomatoCropBlock) block).getAgeProperty()),
                 new ResourceLocation(MiguelsFoods.MOD_ID, "block/" + textureName + state.getValue(((TomatoCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+
+    public void makeRiceCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> riceStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] riceStates(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((RiceCropBlock) block).getAgeProperty()),
+                new ResourceLocation(MiguelsFoods.MOD_ID, "block/" + textureName + state.getValue(((RiceCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
         return models;
     }

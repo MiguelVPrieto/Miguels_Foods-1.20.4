@@ -1,7 +1,7 @@
 package net.blavblav.miguelsfoods.datagen.loot;
 
 import net.blavblav.miguelsfoods.block.ModBlocks;
-import net.blavblav.miguelsfoods.block.custom.TomatoCropBlock;
+import net.blavblav.miguelsfoods.block.custom.RiceCropBlock;
 import net.blavblav.miguelsfoods.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -30,10 +30,20 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         //TOMATO
         LootItemCondition.Builder tomatoCondition = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.TOMATO_CROP.get())
-                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(TomatoCropBlock.AGE, 3));
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(RiceCropBlock.AGE, 3));
 
         this.add(ModBlocks.TOMATO_CROP.get(), createCropDrops(ModBlocks.TOMATO_CROP.get(), ModItems.TOMATO.get(),
                 ModItems.TOMATO_SEEDS.get(), tomatoCondition));
+
+
+        //RICE
+        LootItemCondition.Builder riceCondition = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.RICE_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(RiceCropBlock.AGE, 7));
+
+        this.add(ModBlocks.RICE_CROP.get(), createCropDrops(ModBlocks.RICE_CROP.get(), ModItems.RICE.get(),
+                ModItems.RICE.get(), riceCondition));
+
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

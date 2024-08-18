@@ -68,8 +68,10 @@ public class ModItems {
     public static final RegistryObject<Item> BEAN = ITEMS.register("bean",
             () -> new Item(new Item.Properties().food(ModFoods.BEAN)));
 
+
+
     public static final RegistryObject<Item> RICE = ITEMS.register("rice",
-            () -> new Item(new Item.Properties().food(ModFoods.RICE)));
+            () -> new ItemNameBlockItem(ModBlocks.RICE_CROP.get(), new Item.Properties().food(ModFoods.RICE)));
 
 
     //TOMATO
