@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:potion",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "miguelsfoodsforge1204:dough",
+    "count": 4
+  }
+}

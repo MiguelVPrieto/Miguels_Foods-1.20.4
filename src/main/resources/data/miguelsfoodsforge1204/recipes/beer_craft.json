@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "VTV",
+    "VAV",
+    "VVV"
+  ],
+  "key": {
+    "V": {
+      "item": "minecraft:glass"
+    },
+    "T": {
+      "item": "minecraft:wheat"
+    },
+    "A": {
+      "item": "minecraft:potion",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "miguelsfoodsforge1204:beer",
+    "count": 1
+  }
+}
